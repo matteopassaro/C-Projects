@@ -9,10 +9,14 @@ To do so from time to time I will write some code, some of these will be very ea
 🧮 CALCULATOR APP
 
 This is a pretty basic calculator made in C.
+
 It supports only opearions between two operands.
+
 The only operations allowed are +, -, *, / and ^.
+
 A calculator that operates only two operands is very limitating though.
 Because of that the first improvement I want to do is to make the calculator be able to operate multiple operands.
+
 Then slowly I will add more functions and I will optimize the app the more I can.
 
 🙏🏻 Please keep in mind that I'm still a beginner and this is just me sharing my improvement and learning path.
