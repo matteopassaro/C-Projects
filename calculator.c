@@ -10,43 +10,48 @@
 #include <math.h>
 
 int main(){
-    float op1, op2;
-    float result;
+    double calculate(double firstOp, double secondOp, char operationChar);
+    double op1, op2;
+    double result;
     char operation;
 
 
     printf("Enter the first operand: ");
-    scanf("%f", &op1);
+    scanf("%lf", &op1);
 
     printf("Enter the second operand: ");
-    scanf("%f", &op2);
+    scanf("%lf", &op2);
 
     printf("\nChoose the operation (+, -, *, /, ^)\n");
     printf("--> ");
     scanf(" %c", &operation);
     puts("");
 
-    switch(operation){
+    result = calculate(op1, op2, operation);    
+    printf("%.2lf %c %.2lf = %.2lf", op1, operation, op2, result);
+
+}
+
+double calculate(double firstOp, double secondOp, char operationChar){
+    switch(operationChar){
         case '+':
-            result = op1+op2;
+            return firstOp+secondOp;
             break;
-        
+     
         case '-':
-            result = op1-op2;
+            return firstOp-secondOp;
             break;
 
         case '*':
-            result = op1*op2;
+            return firstOp*secondOp;
             break;
 
         case '/':
-            result = op1/op2;
+            return firstOp/secondOp;
             break;
 
         case '^':
-            result = pow(op1, op2);
-            break;
+            return pow(firstOp, secondOp);
+            break; 
     }
-    printf("%.2f %c %.2f = %.2f", op1, operation, op2, result);
-
 }
