@@ -4,8 +4,8 @@
 
 #include <stdio.h>
 
-int main(void){
-    //double convert(double temperature, double fahrenheit, double celsius);     The separated function that doesn't work atm
+int main(){
+    double convert(double temperatureParameter, char optionParameter);
     double temperature, fahrenheit, celsius;
     char option;
     char ch = 248;     // It's the ASCII character °. I print it this way because
@@ -18,31 +18,39 @@ int main(void){
     scanf("%c", &option);
 
     switch(option){
-        case '1':      // I don't know if recieving a number as char is a good manner but it works fine
+        case '1':      // I don't know whether recieving a number as char is a good manner but it works fine
             printf("Enter the temperature to convert: ");
             scanf("%lf", &temperature);
-           // convert(temperature, fahrenheit, celsius);
-            fahrenheit = (temperature*1.8) + 32;
+            fahrenheit = convert(temperature, option);
             printf("%.2lf %cC = %.2lf %cF", temperature, ch, fahrenheit, ch);
             break;
+       
         case '2':
             printf("Enter the temperature to convert: ");
             scanf("%lf", &temperature);
-           // convert(temperature, fahrenheit, celsius);
-            celsius = (temperature-32)* 0.5556;
+            celsius = convert(temperature, option);
             printf("%.2lf %cF = %.2lf %cC", temperature, ch, celsius, ch);
             break;
-        case 'q':
-            printf("bye");
+        
+        case 'q' || 'Q':
+            printf("Bye");
             break;
+       
+        default:
+            printf("Invalid input.");
+            break;
+
+        return 0;
 
     }
 }
-/*
-double convert(double temperature, double fahrenheit, double celsius){
-    fahrenheit = (temperature*1.8) + 32;
-    celsius = (temperature-32)* 0.5556;
 
-    return fahrenheit;
-    return celsius;
-}  */
+double convert(double temperatureParameter, char optionParameter){
+    
+    if(optionParameter == '1'){
+        return ((temperatureParameter*1.8) + 32);
+    } 
+    else{
+        return ((temperatureParameter-32)* 0.5556);
+    }
+}  
