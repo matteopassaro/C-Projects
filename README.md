@@ -28,7 +28,7 @@ This program is very easy.
 It asks the user if he wants to convert from °C to °F or the other way around.
 Then it asks the temperature to convert and when user enters the value, the program will output the converted temperature.
 
-<strong>FIXED:</strong> I created a separated function to convert the temperatures.
+<strong>RECENT UPDATES:</strong> I created a separated function to convert the temperatures.
 
 <strong>INSECURITIES</strong>: I'm not really sure whether it is or not a good idea to take numbers as character values in input. I did it for this program and it works great, but again, I don't know if it's a good manner or if there's a better way to do it.
 
