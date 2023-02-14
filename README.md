@@ -28,8 +28,8 @@ This program is very easy.
 It asks the user if he wants to convert from °C to °F or the other way around.
 Then it asks the temperature to convert and when user enters the value, the program will output the converted temperature.
 
-<strong>NEXT UPDATES</strong>: As you may have noticed, there is a commented function called 'convert'. Instead of doing the conversion directly inside the switch case, I want to do it into a dedicated function. Tried to do that at first but it didn't work. I will update the code when I'll figure out how to let it work.
+<strong>FIXED:</strong> I created a separated function to convert the temperatures.
 
-<strong>INSECURITIES</strong>: I'm not really sure if it is or not a good idea to take numbers as charachter values in input. I did it for this program and it works great, but again, I don't know if it's a good manner or if there's a better way to do it.
+<strong>INSECURITIES</strong>: I'm not really sure whether it is or not a good idea to take numbers as character values in input. I did it for this program and it works great, but again, I don't know if it's a good manner or if there's a better way to do it.
 
 <strong>🙏🏻 Please keep in mind that I'm still a beginner and this is just me sharing my improvement and learning path.</strong>
