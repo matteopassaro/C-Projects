@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 int main(void){
-    double convert(double temperature, double fahrenheit, double celsius);
+    //double convert(double temperature, double fahrenheit, double celsius);     The separated function that doesn't work atm
     double temperature, fahrenheit, celsius;
     char option;
     char ch = 248;     // It's the ASCII character °. I print it this way because
